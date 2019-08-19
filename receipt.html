@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html ng-app="App" ng-controller="DataController" ng-cloak>
+
+<!-- Mirrored from www.vitaldietsupplements.com/thankyou by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 15 Jan 2019 22:17:13 GMT -->
+<!-- Added by HTTrack -->
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+
+<head>
+  <meta content="noindex" name="robots" />
+  <meta content="noindex" name="googlebot" />
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" href="frontend/css/app.css" media="all">
+  <title>{{brand.name}}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+  <!--// Bootstrap-CSS -->
+  <link href="css/font-awesome.css" rel="stylesheet">
+  <!--// Font-Awesome-CSS -->
+  <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+  <!-- //Style Sheets -->
+  <!-- web-fonts -->
+   <link rel='stylesheet' href='src/css/fonts.css'>
+  <link href="https://fonts.googleapis.com/css?family=Khula:300,400,600,700,800" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,400,400i,500,500i,600,600i,700,700i,800" rel="stylesheet">
+
+
+</head>
+
+<body>
+  <!-- banner -->
+  <div class="banner-1" id="home" data-type="background" data-speed="2">
+    <!-- HEADER START -->
+    <div class="nav-bg">
+        <header></header>
+      </div>
+    <!-- //navigation -->
+    <div class="container">
+
+    </div>
+  </div>
+
+  <div class='page-content text-center' style='margin-bottom: 200px;'>
+      <h2 class="new-fonts" style="color: #2f6fff; margin-top:90px;">Thank You For Your Order of</h2><br>
+      <h2>{{brand.name}} {{current.option.type}}</h2>
+      <br>
+      <p class="new-fonts" style="color: #000;">Your order ID is : <b>{{orderId}}</b></p>
+      <br>
+      <p>You should receive your order via USPS in 4 - 5 days.</p>
+  </div>
+  <!-- CONTENT START -->
+
+  <!-- footer -->
+<footer></footer>
+
+  <script type="text/javascript" src="ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+  <script type="text/javascript" src="ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <script src="src/js/App-config.js"></script>
+  <script src="src/js/DataController.js"></script>
+
+  <script type="text/javascript">
+    jQuery(document).ready(function($) {
+      $(".scroll").click(function(event) {
+        event.preventDefault();
+        $('html,body').animate({
+          scrollTop: $(this.hash).offset().top
+        }, 1000);
+      });
+    });
+
+  </script>
+</body>
+
+</html>

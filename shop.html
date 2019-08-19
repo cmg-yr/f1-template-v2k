@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html ng-app="App" ng-controller="DataController" ng-cloak>
+
+<!-- Mirrored from www.idealdietproducts.com/shop by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 15 Jan 2019 23:12:20 GMT -->
+<!-- Added by HTTrack -->
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+
+<head>
+  <meta content="noindex" name="robots" />
+  <meta content="noindex" name="googlebot" />
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" href="frontend/css/app.css" media="all">
+  <title>{{brand.name}}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+  <!--// Bootstrap-CSS -->
+  <link href="css/font-awesome.css" rel="stylesheet">
+  <!--// Font-Awesome-CSS -->
+  <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+  <!-- //Style Sheets -->
+  <!-- web-fonts -->
+  <link rel='stylesheet' href='src/css/fonts.css'>
+  <link href="https://fonts.googleapis.com/css?family=Khula:300,400,600,700,800" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,400,400i,500,500i,600,600i,700,700i,800" rel="stylesheet">
+
+</head>
+
+<body>
+  <!-- banner -->
+  <div class="banner-1" id="home" data-type="background" data-speed="2">
+    <!-- HEADER START -->
+    <div class="nav-bg">
+      <header></header>
+    </div> <!-- //navigation -->
+  </div>
+  <!-- CONTENT START -->
+  <div class="page-content">
+
+    <!-- INNER PAGE BANNER -->
+
+    <!-- INNER PAGE BANNER END -->
+
+    <!-- BREADCRUMB ROW -->
+    <div class="bg-gray-light p-tb20">
+      <div class="container">
+        <ul class="wt-breadcrumb breadcrumb-style-2">
+          <li><a href="index.html"><i class="fa fa-home"></i> Home</a></li>
+          <li>Shop</li>
+        </ul>
+      </div>
+    </div>
+    <!-- BREADCRUMB ROW END -->
+
+    <!-- pricing -->
+     <div class="w3ls-section wthree-pricing" id='products-view'> 
+      <div class="container">
+        <div class="wthree_head_section">
+          <h3 class="text-center">Our Products</h3>
+          <p class="text-center">{{brand.product.claim}}</p>
+        </div>
+        <div class="pricing-grids-info" style="margin-top: -20px;">
+        
+        <div class="pricing-grid grid-one " style="margin-left: 130px;">
+              <h3>{{brand.product.options[0].type}}</h3> 
+            <div class="w3ls-bottom grid">
+               <figure class="effect-oscar">
+              <img ng-src="{{brand.product.options[0].image}}" class="img img-responsive">
+                   <figcaption>
+              <div class="more btn_wrap">
+                <a href="product.html?option=0" target='_self'>View More</a>        
+              </div>
+                 </figcaption>
+              </figure>
+            </div>
+          </div>
+        <!--  <div class="pricing-grid grid-one" style="box-shadow: none;">
+         <h3>{{brand.product.options[0].type}}</h3> 
+            <div class="w3ls-bottom grid">
+              <figure class="effect-oscar">
+              <img ng-src="{{brand.product.options[0].image}}" class="img img-responsive center-block">
+                <figcaption>
+              <div class="more btn_wrap">
+                <a href="product.html?option=0" target='_self'>View More</a>        
+              </div>
+                </figcaption>
+              </figure>
+            </div> 
+          </div>-->
+          
+          <div class="pricing-grid grid-one " >
+              <h3>{{brand.product.options[1].type}}</h3> 
+            <div class="w3ls-bottom grid">
+               <figure class="effect-oscar">
+              <img ng-src="{{brand.product.options[1].image}}" class="img img-responsive">
+                  <figcaption>
+              <div class="more btn_wrap">
+                <a href="product.html?option=1" target='_self'>View More</a>        
+              </div>
+                 </figcaption>
+              </figure>
+            </div>
+          </div>
+          <div class="clearfix"> </div> 
+          <!--<div style="margin-top:20px;" class="pricing-grid grid-four">
+
+</div>-->
+          <!--End-slider-script-->
+        </div>
+      </div>  
+    </div>  
+      <!--//pricing-->
+  
+  </div>
+
+  <footer></footer>
+
+  <script type="text/javascript" src="ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+  <script type="text/javascript" src="ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script type="text/javascript" src="frontend/js/app.js"></script>
+
+  <script type="text/javascript" src="js/move-top.js"></script>
+  <script type="text/javascript" src="js/easing.js"></script>
+  <script type="text/javascript">
+    jQuery(document).ready(function($) {
+      $(".scroll").click(function(event) {
+        event.preventDefault();
+        $('html,body').animate({
+          scrollTop: $(this.hash).offset().top
+        }, 1000);
+      });
+    });
+
+  </script>
+
+
+
+  <!--js for bootstrap working-->
+  <script src="js/bootstrap.js"></script>
+
+  <script src='src/js/App-config.js'></script>
+  <script src='src/js/DataController.js'></script>
+</body>
+
+</html>

@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html ng-app="App" ng-controller="DataController" ng-cloak>
+  
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+     <meta content="noindex" name="robots" /> <meta content="noindex" name="googlebot" />
+    <!-- META -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- PAGE TITLE HERE -->
+    <title>{{brand.name}}</title>
+    <!-- MOBILE SPECIFIC -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="frontend/css/app.css" media="all">
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+    <!--// Bootstrap-CSS -->
+    <link href="css/font-awesome.css" rel="stylesheet">
+    <!--// Font-Awesome-CSS -->
+    <link rel="stylesheet" href="css/owl.carousel.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" property="" />
+    <!--// Owl-Carousel-CSS -->
+    <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <!-- //Style Sheets -->
+    <!-- web-fonts -->
+    <link href="http://fonts.googleapis.com/css?family=Roboto:100,300,400" rel="stylesheet">
+    <link href="http://fonts.googleapis.com/css?family=Khula:300,400,600,700,800" rel="stylesheet">
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,400,400i,500,500i,600,600i,700,700i,800" rel="stylesheet">
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700,900" rel="stylesheet">
+    <link href="http://fonts.googleapis.com/css?family=Mr+De+Haviland" rel="stylesheet">
+    <link href="http://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+     <link rel="stylesheet"
+  href="cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Luckiest+Guy" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
+  <link rel='stylesheet' href='src/css/fonts.css'>
+    <style>
+      .botton.exthover a:hover {
+        color: #fff;
+        background: cadetblue;
+      }
+
+
+      .description{
+        font-size: 20px;
+        white-space: pre-wrap; 
+      }
+    </style>
+</head>
+
+  <body>
+<div class="nav-bg">
+  <header></header>
+</div>     <!-- banner -->
+    <div class="banner" id="home">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6  banner-text-w3-agileits">
+            <h2 ng-style="{'font-family': style.headerFont}">{{brand.name}}</h2>
+            <p class="description">{{brand.product.description}}</p>
+            <div class="botton" >
+              <a class='scroll' href="#products-view">View all products</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- //banner -->
+<!-- <section class="about-area line-remove">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-12 order-lg-0 order-2">
+                    <div class="row grid">
+                        <div class="col-lg-6 items col-sm-6 col-12" style="position: absolute; left: 0%; top: 0px;">
+                            <div class="about-items active">
+                                <div class="bg-shape"></div>
+                                <span class="flaticon-growth"></span>
+                                <p>MAY HELP SUPPORT Digestive Health &amp; Function</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 items col-sm-6 col-12" style="position: absolute; left: 50%; top: 0px;">
+                            <div class="about-items active">
+                                <div class="bg-shape"></div>
+                                <span class="flaticon-connection"></span>
+                                <p>MAY HELP YOU MANAGE Your Weight With Continued Use</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-12">
+                    <div class="about-content flex-style">
+                        <h2>What is Ideal Diet Products?</h2>
+                        <p>Ideal Diet Products may gently cleanse the system, without causing any harsh effects. However, for best results, it is essential that the supplement is used along with a healthy diet that includes high-fiber content and regular exercise.</p>
+                        <ul>
+                          <div class="botton">
+                            <a href="shop.html">View all products</a>
+                          </div>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+   
+
+    <!-- Latest News -->
+  
+    <!-- Latest News -->
+   
+    <!-- //Latest News -->
+
+    <!-- pricing -->
+
+    <div class="w3ls-section wthree-pricing" id='products-view'>	
+      <div class="container">
+        <div class="wthree_head_section">
+          <h3 class="text-center">{{brand.name}}</h3>
+          <p class="text-center">{{brand.product.claim}}</p>
+        </div>
+        <div class="pricing-grids-info" style="margin-top: -20px;">
+        
+        <div class="pricing-grid grid-one " style="margin-left: 130px;">
+              <h3>{{brand.product.options[0].type}}</h3> 
+            <div class="w3ls-bottom grid">
+               <figure class="effect-oscar">
+              <img ng-src="{{brand.product.options[0].image}}" class="img img-responsive">
+                   <figcaption>
+              <div class="more btn_wrap">
+                <a href="product.html?option=0" target='_self'>View More</a>        
+              </div>
+                 </figcaption>
+              </figure>
+            </div>
+          </div>
+        <!--  <div class="pricing-grid grid-one" style="box-shadow: none;">
+				 <h3>{{brand.product.options[0].type}}</h3> 
+            <div class="w3ls-bottom grid">
+              <figure class="effect-oscar">
+              <img ng-src="{{brand.product.options[0].image}}" class="img img-responsive center-block">
+                <figcaption>
+              <div class="more btn_wrap">
+                <a href="product.html?option=0" target='_self'>View More</a>				
+              </div>
+                </figcaption>
+              </figure>
+            </div> 
+          </div>-->
+          
+          <div class="pricing-grid grid-one " >
+              <h3>{{brand.product.options[1].type}}</h3> 
+            <div class="w3ls-bottom grid">
+               <figure class="effect-oscar">
+              <img ng-src="{{brand.product.options[1].image}}" class="img img-responsive">
+                  <figcaption>
+              <div class="more btn_wrap">
+                <a href="product.html?option=1" target='_self'>View More</a>				
+              </div>
+                 </figcaption>
+              </figure>
+            </div>
+          </div>
+          <div class="clearfix"> </div> 
+          <!--<div style="margin-top:20px;" class="pricing-grid grid-four">
+
+</div>-->
+          <!--End-slider-script-->
+        </div>
+      </div>	
+    </div>	
+    <!--//pricing-->
+
+
+
+    <!-- footer -->
+    <footer></footer>
+
+    <!-- JAVASCRIPT  FILES ========================================= --> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.7/angular.min.js"></script>   
+    <script type="text/javascript" src="ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script type="text/javascript" src="frontend/js/app.js"></script>
+    <div ng-include="frontend/storage/modal.html"> </div>
+
+
+    <script type="text/javascript"  src="js/parallax-scroll.js"></script>
+    <script defer src="js/jquery.flexslider.js"></script>
+    <script type="text/javascript">
+      $(window).load(function(){
+        $('.flexslider').flexslider({
+          animation: "slide",
+          start: function(slider){
+            $('body').removeClass('loading');
+          }
+        });
+      });
+    </script>
+    <!-- //flexSlider -->
+
+    <!-- Owl-Carousel-JavaScript -->
+    <script src="js/owl.carousel.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#owl-demo").owlCarousel({
+          items: 2,
+          lazyLoad: true,
+          autoPlay: false,
+          pagination: true,
+        });
+      });
+    </script>
+    <!-- //Owl-Carousel-JavaScript -->
+    <!-- <script type="text/javascript" src="js/move-top.js"></script> -->
+    <!-- <script type="text/javascript" src="js/easing.js"></script> -->
+    <script type="text/javascript">
+      jQuery(document).ready(function ($) {
+        $(".scroll").click(function (event) {
+          event.preventDefault();
+          $('html,body').animate({
+            scrollTop: $(this.hash).offset().top
+          }, 1000);
+        });
+      });
+    </script>
+    <script src="js/bootstrap.js"></script>
+    <!-- <script src="cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+    <script src="cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/ScrollToPlugin.min.js"></script> -->
+	<script>
+            $(function() {
+        var header = $(".nav-bg "),
+            yOffset = 0,
+            triggerPoint = 150;
+        $(window).scroll(function() {
+          yOffset = $(window).scrollTop();
+
+          if (yOffset >= triggerPoint) {
+            header.addClass("navbar-fixed-top animated fadeInDown");
+          } else {
+            header.removeClass("navbar-fixed-top animated fadeInDown");
+          }
+
+        });
+      });
+    </script>
+    <!--<script>
+      $(function(){
+
+        var $window = $(window);		//Window object
+
+        var scrollTime = 1.2;			//Scroll time
+        var scrollDistance = 400;		//Distance. Use smaller value for shorter scroll and greater value for longer scroll
+
+        $window.on("mousewheel DOMMouseScroll", function(event){
+
+          event.preventDefault();	
+
+          var delta = event.originalEvent.wheelDelta/120 || -event.originalEvent.detail/3;
+          var scrollTop = $window.scrollTop();
+          var finalScroll = scrollTop - parseInt(delta*scrollDistance);
+
+          TweenMax.to($window, scrollTime, {
+            scrollTo : { y: finalScroll, autoKill:true },
+            ease: Power1.easeOut,	//For more easing functions see https://api.greensock.com/js/com/greensock/easing/package-detail.html
+            autoKill: true,
+            overwrite: 5							
+          });
+
+        });
+
+      });
+    </script>-->
+    <script src='src/js/App-config.js'></script>
+    <script src='src/js/DataController.js'></script>
+  </body>
+
+
+<!-- Mirrored from www.idealdietproducts.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 15 Jan 2019 23:09:11 GMT -->
+</html>

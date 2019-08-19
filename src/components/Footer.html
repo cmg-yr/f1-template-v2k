@@ -1,0 +1,39 @@
+<div class="footer" ng-style='{"background-color": style.themeColor}'>
+  <div class="container">
+    <div class="f-bg-w3l">
+      <div class="col-md-12 w3layouts_footer_grid">
+        <!--<h2>Quick <span>Links</span></h2>-->
+        <ul class="con_inner_text">
+          <!-- <li> <a href="terms.html?option=1" target="_black">Terms  &amp; Conditions Keto</a> / <a href="terms.html?option=1" target="_black">Terms  &amp; Conditions Garcinia</a></li> -->
+          <li ng-repeat='option in brand.product.options'>
+            <a ng-href='terms.html?option={{$index}}' target='_self'>{{brand.name}} {{option.type}} Terms</a>
+          </li>
+          <li> <a href="privacy.html" target='_self'>Privacy Policy </a></li>
+          <li> <a href="contact.html" target='_self'>Contact Us</a>  </li>
+          <li> <a href="ingredients.html" target='_self'>Ingredients</a></li>
+          <li> <a href="cancellations.html" target='_self'>Cancellations</a></li>
+
+        </ul>
+      </div>
+      
+       <div class="col-md-12 w3layouts_footer_grid text-center" style="margin-top: 15px;">
+     <!--   <h2>Contact <span>Information</span></h2>-->
+          <p ><span class="fa fa-map-marker" aria-hidden="true"></span>  {{brand.LLC}}<br> <label> {{brand.address}}</label></p>
+          <ul class="con_inner_text">
+          <li> <span class="fa fa-envelope-o" aria-hidden="true">
+          </span><span class="__cf_email__">{{brand.email}}</span></a>
+            </li>
+             <li><span class="fa fa-phone" aria-hidden="true"></span> {{brand.phoneNumber}}</li>
+         </ul>
+      </div>
+      <div class="col-md-12 w3layouts_footer_grid" style="padding-top: 15px; border: 3px solid black; margin-top: 15px;">
+       <h2 class="text-center">FDA Disclaimer</h2>
+        <p class="text-center" style="font-size: 14px;"> 
+          
+          The statements made on our websites have not been evaluated by the FDA (U.S. Food &amp; Drug Administration). This product is not intended to diagnose, cure or prevent any disease. The information provided by this website, email, or this company is not a substitute for a face-to-face consultation with your health care professional and should not be construed as individual medical advice. If there is a change in your medical condition, please stop using our product immediately and consult your health care professional. Do not use if safety seal is broken or missing. For adult use only, keep out of reach of children under 18 years of age.</p>
+      </div>
+      <div class="clearfix"> </div>
+    </div>
+  </div>
+  <p class="copyright">2019 {{brand.name}}. All Rights Reserved</p>
+</div>

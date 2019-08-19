@@ -1,0 +1,61 @@
+{
+  "calcium": {
+    "main": "- Calcium (as Calcium Carbonate), Proprietary Blend(Epimedium Extract (aerial parts), Eurycoma Longifolia Root Extract, Saw Palmetto Extract (fruit), Bovine Orchic Substance, Wild Yam Root Extract, Sarsaparilla Root Extract, Nettle Root Extract, Boron Amino Acid Chelate",
+    "other": "Gelatin (Capsule), Magnesium Stearate, Mycrocrystalline Cellulose."
+  },
+
+  "potassium": {
+    "main": "- Potassium (as Dipotassium Phosphate), Proprietary Blend( L-Arginine Alpha, Ketoglutarate, L-Arginine Base, L-Arginine HCI), L-Citrulline. ",
+    "other": "Gelatin (capsule), Magnesium Stearate, Microcrystalline Cellulose."
+  },
+
+  "cascara": {
+    "main": "- Cascara Sagrada Bark Powder, Psyllium Husk Powder, Irvingia Gabonensis Seed Extract, Green Coffee Bean Extract (50% Chlorogenic acid), Aloe Vera Leaf Powder, Buckthorn Bark Powder, Citrus Pectin Powder, Fennel Seed Powder. ",
+    "other": "Gelatin, Rice Flour, Silicon Dioxide, Magnesium Stearate USP"
+  },
+
+  "mango": {
+    "main": "- African Mango (seed extract), Fennel seed, Cascara Sagrada, Oat bran, Buckthorn root, Citrus pectin, Pumpkin seed, Aloe vera, Cayenne Pepper, Ginger, Licorice root, Rhubarb, Acai, Cape aloe, Prune Juice, Flax seed, GoldenSeal, Acidophilus. ",
+    "other": ""
+  },
+
+  "garcinia": {
+    "main": "- Garcinia Cambogia Extract 60% HCA, Calcium (as Dicalcium Phosphate), Potassium (as Potassium Chloride), Chromium (as Chromium Amino Acid Chelate), Gelatin, Microcrystalline, Magnesium Stearate, Silicon Dioxide. ",
+    "other": ""
+  },
+
+  "forskolin": {
+    "main": "- Coleus Forskohlii Root Extract\n, Vegetable Cellulose\n, Di-calcium Phosphate\n, Vegetable stearate\n, Silica",
+    "other": ""
+  },
+
+  "cleanse": {
+    "main": "- Psyllium Husks\n- Glucomannan\n- Slippery Elm Bark\n- Inulin from Chicory Root\n- Burdock Root\n- Aloe Vera Leaf\n- Fennel Seed\n- A Powerful Enzyme\n- Probiotic Blend with Lactobacillulus Acidophilus",
+    "other": ""
+  },
+
+  "nitric-oxide": {
+    "main": "- Hydra-Super Pump\u2122 Matrix\n- Creatine HCL\n- Niacin, a B vitamin (B3)\n- Sodium Bicarbonate\n- Agmatine Sulfate",
+    "other":""
+  },
+
+  "testosterone": {
+    "main": "- TestoBoron\u2122\n- Muira Puma Bark Powder\n- Fenugreek Seed Powder\n- Eurycoma Longifolia Extract (aka Long Jack)\n- Black Pepper Extract",
+    "other": ""
+  },
+
+  "keto": {
+    "main": "- Magnesium Beta Hydroxybutyrate, Calcium Beta Hydroxybutyrate, Sodium Beta Hydroxybutyrate",
+    "other": "Gelatin, Rice Flour, Magnesium Stearate, Silicon Dioxide"
+  },
+
+  "bcaa": {
+    "main": "- L-Leucine, L-Isoleucine, L-Valine",
+    "other": "Gelatin(capsule), Silicon Dioxide"
+  },
+  
+  "green-coffee": {
+    "main": "- Green Coffee Bean Extract(50% Chlorogenic Acid)",
+    "other": "Vegetable Cellulose (capsule), Magnesium Stearate, Silicon Dioxide"
+  }
+}

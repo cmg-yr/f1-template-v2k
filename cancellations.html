@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html ng-app="App" ng-controller="DataController" ng-cloak>
+	<head>
+		<meta content="noindex" name="robots" />
+		<meta content="noindex" name="googlebot" />
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<link rel="stylesheet" href="frontend/css/app.css" media="all">
+		<!-- FAVICONS ICON -->
+		<title>{{brand.name}}</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+		<!--// Bootstrap-CSS -->
+		<link href="css/font-awesome.css" rel="stylesheet">
+		<!--// Font-Awesome-CSS -->
+		<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+		<!-- //Style Sheets -->
+		<!-- web-fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Khula:300,400,600,700,800" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,400,400i,500,500i,600,600i,700,700i,800" rel="stylesheet">
+		 <link rel='stylesheet' href='src/css/fonts.css'>
+		<style>
+			h4 {
+			line-height: 22px;
+			color: #3f3e3e;
+			margin-top: 15px;
+			margin-bottom: 15px;
+			}
+			input[type=checkbox]+label:before, input[type=radio]+label:before{
+			border-radius: 30px;
+			}
+		</style>
+		<!--// web-fonts -->
+		<script>var SITE_BASE_URL = '.';</script>
+	</head>
+	<body>
+		<div class="banner-1" id="home" data-type="background" data-speed="2">
+			<!-- HEADER START -->
+			<div class="nav-bg">
+				<header></header>
+			</div>
+        </div>
+
+        <div class="page-content">
+            <div class="bg-gray-light p-tb20">
+                <div class="container">
+                    <ul class="wt-breadcrumb breadcrumb-style-2">
+                    <li><a href="index.html"><i class="fa fa-home"></i> Home</a></li>
+                    <li>Cancellation</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="container" style="padding-top: 25px;">
+                <div class="row">
+                    <div class="col-md-offset-3 col-md-6">
+                        <div class="panel panel-info">
+                            <div class="panel-heading"><span></span> Cancellation Form</div>
+                            <div class="panel-body">
+                                    <p style="margin-bottom:15px;">Please fill out the information below to cancel your order.</p>
+                                    <form name="contactform" method="post" action="send_form_email.php">
+                                        <input type="hidden" type="email" name="email_to" value="{{brand.cancellationEmail}}" required/>
+                                        <div class="form-group">
+                                            <strong>Email Address</strong>
+                                            <input class="form-control" type="email" name="email"  data-required-error="Email Required"
+                                            data-regex="email" data-regex-error="Invalid Email" required/>
+                                        </div>
+                        
+                                        <div class="form-group">
+                                            <strong>Phone Number</strong>
+                                            <input class="form-control" type="tel" pattern="\d*.{10,10}" minlength="10" maxlength="10" name="telephone" data-required-error="Phone Number Required"
+                                            data-regex="telephone" data-regex-error="Invalid Phone Number" required/>
+                                        </div>
+                        
+                                        <div class="form-group">
+                                            <strong>Order Number</strong>
+                                            <input class="form-control" type="text" name="order"  data-required-error="Order Number Required"
+                                            data-regex="order" data-regex-error="Invalid Order Number" required/>
+                                        </div>
+                    
+                                        <div class="form-group">
+                                            <input type="submit" class="btn payment-form-button btn-primary" value='Submit'>
+                                            </div>
+                                    </form>   
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+	<!-- CONTENT END -->
+	<footer></footer>
+	<!-- BUTTON TOP START -->
+	<input type="hidden" id="upcart">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.7/angular.min.js"></script>   
+	<script type="text/javascript" src="ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="src/js/App-config.js"></script>
+	<script src="src/js/DataController.js"></script>
+	<script type="text/javascript">
+		jQuery(document).ready(function($) {
+		  $(".scroll").click(function(event) {
+		    event.preventDefault();
+		    $('html,body').animate({
+		      scrollTop: $(this.hash).offset().top
+		    }, 1000);
+		  });
+		});
+		
+	</script>
+	<!--js for bootstrap working-->
+	<script src="js/bootstrap.js"></script>
+	</body>
+</html>

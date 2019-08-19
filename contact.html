@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html ng-app="App" ng-controller="DataController" ng-cloak>
+  
+<head>
+     <meta content="noindex" name="robots" /> <meta content="noindex" name="googlebot" />
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="frontend/css/app.css" media="all">
+    <!-- PAGE TITLE HERE -->
+    <title>{{brand.name}}</title>
+
+    <!-- MOBILE SPECIFIC -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- BOOTSTRAP STYLE SHEET -->
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+    <!--// Bootstrap-CSS -->
+    <link href="css/font-awesome.css" rel="stylesheet">
+    <!--// Font-Awesome-CSS -->
+    <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <!-- //Style Sheets -->
+    <!-- web-fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Khula:300,400,600,700,800" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,400,400i,500,500i,600,600i,700,700i,800" rel="stylesheet">
+    <link rel="stylesheet" href="../cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     <link rel='stylesheet' href='src/css/fonts.css'>
+    <style>
+      .wt-icon-box-wraper.center {
+        text-align: center;
+        min-height: 274px;
+      }
+
+    </style>
+</head>
+
+  <body>
+    <!-- banner -->
+    <div class="banner-1" id="home" data-type="background" data-speed="2">
+      <!-- HEADER START -->
+      <div class="nav-bg">
+  <header></header>
+</div>      <!-- //navigation -->
+    </div>
+    <!-- CONTENT START -->
+    <div class="page-content p-tb20">
+    <div class="container">
+      <div class="row">
+         <div class="content">
+
+        <!-- MAP BLOCK START -->
+        <div class="contact-left-part equal-col" style="height: 305px;float: none;width: 100%;margin-bottom: 20px;">
+          <h4 class="new-fonts2">Customer Service</h4>
+          <p>
+            If you have any questions about {{brand.name}} or the products we offer, contact us! We’d love to chat.
+          </p>
+          <p>
+            <h4>Availability</h4>
+            <span>{{misc.callAvailability}}</span>
+          </p>
+          <br>
+          <p><i class="fa fa-phone"></i>
+            Call : {{brand.phoneNumber}}
+          </p>
+          <p><i class="fa fa-envelope"></i>
+            Email: {{brand.email}}
+          </p>
+
+          <p><i class="fa fa-location-arrow"></i>
+            Corporate Address: {{brand.address}}
+          </p>
+
+          <p><i class="fa fa-location-arrow"></i>
+            Return Address: {{brand.returnAddress}}
+          </p>
+          <br>
+
+
+        </div>
+        <!-- MAP BLOCK END -->
+
+
+
+      </div>
+      </div>
+      </div>
+
+    </div>
+    <!-- CONTENT END -->
+
+    <!-- FOOTER START -->
+    <!-- footer -->
+<footer></footer>
+
+    <script type="text/javascript" src="ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <script type="text/javascript" src="ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script type="text/javascript" src="frontend/js/app.js"></script>
+    <script type="text/javascript">
+      jQuery(document).ready(function ($) {
+        $(".scroll").click(function (event) {
+          event.preventDefault();
+          $('html,body').animate({
+            scrollTop: $(this.hash).offset().top
+          }, 1000);
+        });
+      });
+    </script>
+    <script src="js/bootstrap.js"></script>
+
+    <script src='src/js/App-config.js'></script>
+    <script src='src/js/DataController.js'></script>
+  </body>
+
+</html>

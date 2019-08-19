@@ -1,0 +1,414 @@
+@font-face {
+  font-family: 'Aaargh';
+  src: url('../../assets/fonts/Aaargh.ttf');
+}
+
+@font-face {
+  font-family: 'Amatic-Bold';
+  src: url('../../assets/fonts/Amatic-Bold.ttf');
+}
+
+@font-face {
+  font-family: 'AmaticSC-Regular';
+  src: url('../../assets/fonts/AmaticSC-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Anagram';
+  src: url('../../assets/fonts/Anagram.ttf');
+}
+
+@font-face {
+  font-family: 'Bellota-Bold';
+  src: url('../../assets/fonts/Bellota-Bold.otf');
+}
+
+@font-face {
+  font-family: 'Bellota-BoldItalic';
+  src: url('../../assets/fonts/Bellota-BoldItalic.otf');
+}
+
+@font-face {
+  font-family: 'Bellota-Italic';
+  src: url('../../assets/fonts/Bellota-Italic.otf');
+}
+
+@font-face {
+  font-family: 'Bellota-Light';
+  src: url('../../assets/fonts/Bellota-Light.otf');
+}
+
+@font-face {
+  font-family: 'Bellota-LightItalic';
+  src: url('../../assets/fonts/Bellota-LightItalic.otf');
+}
+
+@font-face {
+  font-family: 'Bellota-Regular';
+  src: url('../../assets/fonts/Bellota-Regular.otf');
+}
+
+@font-face {
+  font-family: 'Carrington';
+  src: url('../../assets/fonts/Carrington.ttf');
+}
+
+@font-face {
+  font-family: 'CaviarDreams';
+  src: url('../../assets/fonts/CaviarDreams.ttf');
+}
+
+@font-face {
+  font-family: 'CaviarDreams_BoldItalic';
+  src: url('../../assets/fonts/CaviarDreams_BoldItalic.ttf');
+}
+
+@font-face {
+  font-family: 'CaviarDreams_Italic';
+  src: url('../../assets/fonts/CaviarDreams_Italic.ttf');
+}
+
+@font-face {
+  font-family: 'Caviar_Dreams_Bold';
+  src: url('../../assets/fonts/Caviar_Dreams_Bold.ttf');
+}
+
+@font-face {
+  font-family: 'CherrySwash-Bold';
+  src: url('../../assets/fonts/CherrySwash-Bold.otf');
+}
+
+@font-face {
+  font-family: 'CherrySwash-Regular';
+  src: url('../../assets/fonts/CherrySwash-Regular.otf');
+}
+
+@font-face {
+  font-family: 'Diner-Fatt';
+  src: url('../../assets/fonts/Diner-Fatt.ttf');
+}
+
+@font-face {
+  font-family: 'Diner-Obese';
+  src: url('../../assets/fonts/Diner-Obese.ttf');
+}
+
+@font-face {
+  font-family: 'Diner-Regular';
+  src: url('../../assets/fonts/Diner-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Diner-Skinny';
+  src: url('../../assets/fonts/Diner-Skinny.ttf');
+}
+
+@font-face {
+  font-family: 'District';
+  src: url('../../assets/fonts/District.ttf');
+}
+
+@font-face {
+  font-family: 'Dubtronic-Inline';
+  src: url('../../assets/fonts/Dubtronic-Inline.otf');
+}
+
+@font-face {
+  font-family: 'Dubtronic-Solid';
+  src: url('../../assets/fonts/Dubtronic-Solid.otf');
+}
+
+@font-face {
+  font-family: 'FORTSSH_';
+  src: url('../../assets/fonts/FORTSSH_.ttf');
+}
+
+@font-face {
+  font-family: 'GEIST_RND';
+  src: url('../../assets/fonts/GEIST_RND.ttf');
+}
+
+@font-face {
+  font-family: 'Geotica_2012';
+  src: url('../../assets/fonts/Geotica_2012.otf');
+}
+
+@font-face {
+  font-family: 'Gladifilthefte';
+  src: url('../../assets/fonts/Gladifilthefte.ttf');
+}
+
+@font-face {
+  font-family: 'GrandHotel-Regular';
+  src: url('../../assets/fonts/GrandHotel-Regular.otf');
+}
+
+@font-face {
+  font-family: 'HOMINIS';
+  src: url('../../assets/fonts/HOMINIS.ttf');
+}
+
+@font-face {
+  font-family: 'Jura-DemiBold';
+  src: url('../../assets/fonts/Jura-DemiBold.otf');
+}
+
+@font-face {
+  font-family: 'Jura-Light';
+  src: url('../../assets/fonts/Jura-Light.otf');
+}
+
+@font-face {
+  font-family: 'Jura-Medium';
+  src: url('../../assets/fonts/Jura-Medium.otf');
+}
+
+@font-face {
+  font-family: 'Jura-Regular';
+  src: url('../../assets/fonts/Jura-Regular.otf');
+}
+
+@font-face {
+  font-family: 'KellySlab-Regular';
+  src: url('../../assets/fonts/KellySlab-Regular.otf');
+}
+
+@font-face {
+  font-family: 'LeagueScript';
+  src: url('../../assets/fonts/LeagueScript.otf');
+}
+
+@font-face {
+  font-family: 'MaidenOrange';
+  src: url('../../assets/fonts/MaidenOrange.ttf');
+}
+
+@font-face {
+  font-family: 'Matchbook';
+  src: url('../../assets/fonts/Matchbook.otf');
+}
+
+@font-face {
+  font-family: 'MavenProLight-100';
+  src: url('../../assets/fonts/MavenProLight-100.otf');
+}
+
+@font-face {
+  font-family: 'MavenProLight-200';
+  src: url('../../assets/fonts/MavenProLight-200.otf');
+}
+
+@font-face {
+  font-family: 'MavenProLight-300';
+  src: url('../../assets/fonts/MavenProLight-300.otf');
+}
+
+@font-face {
+  font-family: 'Modum_Italic_Italic';
+  src: url('../../assets/fonts/Modum_Italic_Italic.otf');
+}
+
+@font-face {
+  font-family: 'Modum_Regular_Regular';
+  src: url('../../assets/fonts/Modum_Regular_Regular.otf');
+}
+
+@font-face {
+  font-family: 'Monoton-Regular';
+  src: url('../../assets/fonts/Monoton-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Monoxil';
+  src: url('../../assets/fonts/Monoxil.otf');
+}
+
+@font-face {
+  font-family: 'NEORD___';
+  src: url('../../assets/fonts/NEORD___.ttf');
+}
+
+@font-face {
+  font-family: 'NEORF___';
+  src: url('../../assets/fonts/NEORF___.ttf');
+}
+
+@font-face {
+  font-family: 'NEORS___';
+  src: url('../../assets/fonts/NEORS___.ttf');
+}
+
+@font-face {
+  font-family: 'Neou-Bold';
+  src: url('../../assets/fonts/Neou-Bold.otf');
+}
+
+@font-face {
+  font-family: 'Neou-Thin';
+  src: url('../../assets/fonts/Neou-Thin.otf');
+}
+
+@font-face {
+  font-family: 'Ostrich_Sans_Inline-italic';
+  src: url('../../assets/fonts/Ostrich_Sans_Inline-italic.otf');
+}
+
+@font-face {
+  font-family: 'Ostrich_Sans_Inline-regular';
+  src: url('../../assets/fonts/Ostrich_Sans_Inline-regular.otf');
+}
+
+@font-face {
+  font-family: 'Pacifico';
+  src: url('../../assets/fonts/Pacifico.ttf');
+}
+
+@font-face {
+  font-family: 'RalewayDots-Regular';
+  src: url('../../assets/fonts/RalewayDots-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'RothmanPlain';
+  src: url('../../assets/fonts/RothmanPlain.ttf');
+}
+
+@font-face {
+  font-family: 'SALARYMA';
+  src: url('../../assets/fonts/SALARYMA.ttf');
+}
+
+@font-face {
+  font-family: 'SF_Collegiate';
+  src: url('../../assets/fonts/SF_Collegiate.ttf');
+}
+
+@font-face {
+  font-family: 'SF_Collegiate_Solid';
+  src: url('../../assets/fonts/SF_Collegiate_Solid.ttf');
+}
+
+@font-face {
+  font-family: 'SOUCISAN';
+  src: url('../../assets/fonts/SOUCISAN.ttf');
+}
+
+@font-face {
+  font-family: 'Sportrop';
+  src: url('../../assets/fonts/Sportrop.otf');
+}
+
+@font-face {
+  font-family: 'TulpenOne-Regular';
+  src: url('../../assets/fonts/TulpenOne-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'UNDERCOV';
+  src: url('../../assets/fonts/UNDERCOV.ttf');
+}
+
+@font-face {
+  font-family: 'VAL';
+  src: url('../../assets/fonts/VAL.otf');
+}
+
+@font-face {
+  font-family: 'VastShadow-Regular';
+  src: url('../../assets/fonts/VastShadow-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Zambajoun';
+  src: url('../../assets/fonts/Zambajoun.ttf');
+}
+
+@font-face {
+  font-family: 'ZnikomitNo24';
+  src: url('../../assets/fonts/ZnikomitNo24.otf');
+}
+
+@font-face {
+  font-family: 'clutchee';
+  src: url('../../assets/fonts/clutchee.otf');
+}
+
+@font-face {
+  font-family: 'droid';
+  src: url('../../assets/fonts/droid.otf');
+}
+
+@font-face {
+  font-family: 'fonts';
+  src: url('../../assets/fonts/fonts.css');
+}
+
+@font-face {
+  font-family: 'fonts';
+  src: url('../../assets/fonts/fonts.json');
+}
+
+@font-face {
+  font-family: 'loaded';
+  src: url('../../assets/fonts/loaded.ttf');
+}
+
+@font-face {
+  font-family: 'ostrich-black';
+  src: url('../../assets/fonts/ostrich-black.ttf');
+}
+
+@font-face {
+  font-family: 'ostrich-bold';
+  src: url('../../assets/fonts/ostrich-bold.ttf');
+}
+
+@font-face {
+  font-family: 'ostrich-dashed';
+  src: url('../../assets/fonts/ostrich-dashed.ttf');
+}
+
+@font-face {
+  font-family: 'ostrich-light';
+  src: url('../../assets/fonts/ostrich-light.ttf');
+}
+
+@font-face {
+  font-family: 'ostrich-regular';
+  src: url('../../assets/fonts/ostrich-regular.ttf');
+}
+
+@font-face {
+  font-family: 'ostrich-rounded';
+  src: url('../../assets/fonts/ostrich-rounded.ttf');
+}
+
+@font-face {
+  font-family: 'pincoyablack';
+  src: url('../../assets/fonts/pincoyablack.otf');
+}
+
+@font-face {
+  font-family: 'porter-sans-inline-block';
+  src: url('../../assets/fonts/porter-sans-inline-block.otf');
+}
+
+@font-face {
+  font-family: 'sybil_green';
+  src: url('../../assets/fonts/sybil_green.otf');
+}
+
+@font-face {
+  font-family: 'techniqo';
+  src: url('../../assets/fonts/techniqo.ttf');
+}
+
+@font-face {
+  font-family: 'techniqu';
+  src: url('../../assets/fonts/techniqu.ttf');
+}
+
+@font-face {
+  font-family: 'varsity_regular';
+  src: url('../../assets/fonts/varsity_regular.ttf');
+}

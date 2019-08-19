@@ -1,0 +1,35 @@
+<div class="option card border" id='{{$index}}' ng-click='select($index)'>
+  <div class="card-header text-center">
+    <h1>{{option.quantity}} {{formatContainer(brand.product.container, option.quantity)}}</h1>
+  </div>
+  <div class="card-body text-center">
+    <img class='img-fluid' ng-src=/assets/images/{{option.image}} alt="product image" style='max-height: 183px'>
+
+    <div class='option-info' style='height: 100px'>
+      <p>
+        <b>{{option.description}}</b><br>
+        Includes {{option.quantity}} {{formatContainer(current.product.container, option.quantity)}} ({{option.quantity * 30}} day supply) of
+        <b>{{product.name}}</b>
+      </p>
+    </div>
+    <div class="option-prices">
+      <table>
+        <tr>
+          <td class='text-left'>Each:</td>
+          <td class='text-right'>
+            <span class='regular-price ' ng-if='option.price.regular !== brand.product.basePrice'>{{brand.product.basePrice | currency}}</span>
+            <span class='text-success'>{{option.price.regular | currency}}</span>
+          </td>
+        </tr>
+        <tr>
+          <td class='text-left'>Shipping:</td>
+          <td class='text-right shipping-price'>{{option.price.shipping ? (option.price.shipping | currency) : 'Free'}}</td>
+        </tr>
+        <tr>
+          <td class='text-left'>Total:</td>
+          <td class='text-right text-primary'>{{(option.price.regular * option.quantity) + option.price.shipping | currency}}</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</div>

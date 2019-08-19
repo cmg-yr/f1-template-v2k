@@ -1,0 +1,247 @@
+[{
+  "font": "Aaargh",
+  "ext": "ttf"
+}, {
+  "font": "Amatic-Bold",
+  "ext": "ttf"
+}, {
+  "font": "AmaticSC-Regular",
+  "ext": "ttf"
+}, {
+  "font": "Anagram",
+  "ext": "ttf"
+}, {
+  "font": "Bellota-Bold",
+  "ext": "otf"
+}, {
+  "font": "Bellota-BoldItalic",
+  "ext": "otf"
+}, {
+  "font": "Bellota-Italic",
+  "ext": "otf"
+}, {
+  "font": "Bellota-Light",
+  "ext": "otf"
+}, {
+  "font": "Bellota-LightItalic",
+  "ext": "otf"
+}, {
+  "font": "Bellota-Regular",
+  "ext": "otf"
+}, {
+  "font": "Carrington",
+  "ext": "ttf"
+}, {
+  "font": "CaviarDreams",
+  "ext": "ttf"
+}, {
+  "font": "CaviarDreams_BoldItalic",
+  "ext": "ttf"
+}, {
+  "font": "CaviarDreams_Italic",
+  "ext": "ttf"
+}, {
+  "font": "Caviar_Dreams_Bold",
+  "ext": "ttf"
+}, {
+  "font": "CherrySwash-Bold",
+  "ext": "otf"
+}, {
+  "font": "CherrySwash-Regular",
+  "ext": "otf"
+}, {
+  "font": "Diner-Fatt",
+  "ext": "ttf"
+}, {
+  "font": "Diner-Obese",
+  "ext": "ttf"
+}, {
+  "font": "Diner-Regular",
+  "ext": "ttf"
+}, {
+  "font": "Diner-Skinny",
+  "ext": "ttf"
+}, {
+  "font": "District",
+  "ext": "ttf"
+}, {
+  "font": "Dubtronic-Inline",
+  "ext": "otf"
+}, {
+  "font": "Dubtronic-Solid",
+  "ext": "otf"
+}, {
+  "font": "FORTSSH_",
+  "ext": "ttf"
+}, {
+  "font": "GEIST_RND",
+  "ext": "ttf"
+}, {
+  "font": "Geotica_2012",
+  "ext": "otf"
+}, {
+  "font": "Gladifilthefte",
+  "ext": "ttf"
+}, {
+  "font": "GrandHotel-Regular",
+  "ext": "otf"
+}, {
+  "font": "HOMINIS",
+  "ext": "ttf"
+}, {
+  "font": "Jura-DemiBold",
+  "ext": "otf"
+}, {
+  "font": "Jura-Light",
+  "ext": "otf"
+}, {
+  "font": "Jura-Medium",
+  "ext": "otf"
+}, {
+  "font": "Jura-Regular",
+  "ext": "otf"
+}, {
+  "font": "KellySlab-Regular",
+  "ext": "otf"
+}, {
+  "font": "LeagueScript",
+  "ext": "otf"
+}, {
+  "font": "MaidenOrange",
+  "ext": "ttf"
+}, {
+  "font": "Matchbook",
+  "ext": "otf"
+}, {
+  "font": "MavenProLight-100",
+  "ext": "otf"
+}, {
+  "font": "MavenProLight-200",
+  "ext": "otf"
+}, {
+  "font": "MavenProLight-300",
+  "ext": "otf"
+}, {
+  "font": "Modum_Italic_Italic",
+  "ext": "otf"
+}, {
+  "font": "Modum_Regular_Regular",
+  "ext": "otf"
+}, {
+  "font": "Monoton-Regular",
+  "ext": "ttf"
+}, {
+  "font": "Monoxil",
+  "ext": "otf"
+}, {
+  "font": "NEORD___",
+  "ext": "ttf"
+}, {
+  "font": "NEORF___",
+  "ext": "ttf"
+}, {
+  "font": "NEORS___",
+  "ext": "ttf"
+}, {
+  "font": "Neou-Bold",
+  "ext": "otf"
+}, {
+  "font": "Neou-Thin",
+  "ext": "otf"
+}, {
+  "font": "Ostrich_Sans_Inline-italic",
+  "ext": "otf"
+}, {
+  "font": "Ostrich_Sans_Inline-regular",
+  "ext": "otf"
+}, {
+  "font": "Pacifico",
+  "ext": "ttf"
+}, {
+  "font": "RalewayDots-Regular",
+  "ext": "ttf"
+}, {
+  "font": "RothmanPlain",
+  "ext": "ttf"
+}, {
+  "font": "SALARYMA",
+  "ext": "ttf"
+}, {
+  "font": "SF_Collegiate",
+  "ext": "ttf"
+}, {
+  "font": "SF_Collegiate_Solid",
+  "ext": "ttf"
+}, {
+  "font": "SOUCISAN",
+  "ext": "ttf"
+}, {
+  "font": "Sportrop",
+  "ext": "otf"
+}, {
+  "font": "TulpenOne-Regular",
+  "ext": "ttf"
+}, {
+  "font": "UNDERCOV",
+  "ext": "ttf"
+}, {
+  "font": "VAL",
+  "ext": "otf"
+}, {
+  "font": "VastShadow-Regular",
+  "ext": "ttf"
+}, {
+  "font": "Zambajoun",
+  "ext": "ttf"
+}, {
+  "font": "ZnikomitNo24",
+  "ext": "otf"
+}, {
+  "font": "clutchee",
+  "ext": "otf"
+}, {
+  "font": "droid",
+  "ext": "otf"
+}, {
+  "font": "fonts",
+  "ext": "json"
+}, {
+  "font": "loaded",
+  "ext": "ttf"
+}, {
+  "font": "ostrich-black",
+  "ext": "ttf"
+}, {
+  "font": "ostrich-bold",
+  "ext": "ttf"
+}, {
+  "font": "ostrich-dashed",
+  "ext": "ttf"
+}, {
+  "font": "ostrich-light",
+  "ext": "ttf"
+}, {
+  "font": "ostrich-regular",
+  "ext": "ttf"
+}, {
+  "font": "ostrich-rounded",
+  "ext": "ttf"
+}, {
+  "font": "pincoyablack",
+  "ext": "otf"
+}, {
+  "font": "porter-sans-inline-block",
+  "ext": "otf"
+}, {
+  "font": "sybil_green",
+  "ext": "otf"
+}, {
+  "font": "techniqo",
+  "ext": "ttf"
+}, {
+  "font": "techniqu",
+  "ext": "ttf"
+}, {
+  "font": "varsity_regular",
+  "ext": "ttf"
+}]

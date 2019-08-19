@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html ng-app="App" ng-controller="DataController" ng-cloak>
+<head>
+  <meta charset="UTF-8">
+  <meta content="noindex" name="robots" />
+  <meta content="noindex" name="googlebot" />
+  <title>Terms of Service</title>
+  <meta name="description" content="Ideal Diet Products">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link rel="stylesheet" href="frontend/css/app.css" media="all">
+
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+  <!--// Bootstrap-CSS -->
+  <link href="css/font-awesome.css" rel="stylesheet">
+  <!--// Font-Awesome-CSS -->
+  <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+  <!-- //Style Sheets -->
+  <!-- web-fonts -->
+  <link rel='stylesheet' href='src/css/fonts.css'>
+  <link href="https://fonts.googleapis.com/css?family=Khula:300,400,600,700,800" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,400,400i,500,500i,600,600i,700,700i,800" rel="stylesheet">
+  <!-- angular -->
+</head>
+
+<body>
+  <!-- banner -->
+  <div class="banner-1" id="home" data-type="background" data-speed="2">
+    <!-- HEADER START -->
+    <div class="nav-bg">
+      <header></header>
+    </div> <!-- //navigation -->
+  </div>
+  <div class="container legal p-tb20">
+    <h1>Terms and Conditions</h1>
+    <p>&nbsp;</p>
+    <p>{{brand.LLC}}: By placing an order through this website, you agree to the terms and conditions set for the below. Please read through these terms carefully before placing your order and print a copy for future reference. Please also read our Privacy Policy regarding personal information provided by you, which is incorporated herein by reference.</p>
+    <br>
+      <h4>{{misc.currentYear}} {{brand.LLC}} - All Rights Reserved</h4>
+      <h4>{{brand.name}} {{current.option.type}}</h4>
+      <h4>{{brand.phoneNumber}}</h4>
+      <h4>{{brand.address}}</h4>
+      <h4>{{brand.email}}</h4>
+      <br>
+      <h4>Return address: <br>{{brand.returnAddress}}</h4>
+    <br> <br>
+    <br>
+    <h2>Products Pricing.</h2>
+    <p>You may choose a one time purchase of our travel size product or purchase our regular size bottles with monthly subscription for the following prices.</p>
+    <br>
+    <p>
+      <b>*{{brand.name}}</b><br>
+      {{current.option.price.travelPack.regular | currency}} + $0.00 - Travel Size (One Week Supply)<br>
+      {{current.option.price.straightSale.regular | currency}} + $0.00 - Regular Size (One Month Supply) <br>
+      {{current.option.price.continuity.regular | currency}} + {{current.option.price.continuity.shipping | currency}} - Regular Size (One Month Supply with Continuity Program)<br><br><br>
+    </p>
+    <p>
+      Charges will appear on your billing statement as <b>{{brand.product.descriptor}}</b>.
+    </p>
+    <br>
+    <br>
+    <h2>Travel Size Supply:</h2>
+    <p>You will be subjected to a one-time charge plus shipping for the purchase of any travel size products.</p>
+    <br>
+    <br>
+    <h2>Autoship Continuity Program Details.</h2>
+    <p>The Autoship Continuity Program lets you choose to receive a new supply of our products once every month for at the full price. With the Autoship program a fresh supply will be shipped to you approximately once every 30 days (monthly) until cancelled. You can cancel your program at anytime by calling customer service at {{brand.phoneNumber}}, emailing us at {{brand.email}} or by filling out our <a href='cancellations.html' target='_self'>Cancellation Form</a>.</p>
+    <br>
+    <br>
+    <h2>Health Disclaimer.</h2>
+
+    <p>Any statements on this site or any materials or supplements distributed or sold by {{brand.name}} has not been evaluated by the Food and Drug Administration (FDA). This product is not intended to diagnose, treat, cure or prevent any disease. If you are pregnant, nursing, taking medication, or have a history of heart conditions we suggest consulting with a physician before using any of our products. The results on all products are not typical and not everyone will experience these results.</p>
+    <br>
+    <br>
+    <h2>Refund Policy.</h2>
+    <p>1. We refund all cases of fraud and unauthorized transactions included shipping and handling charges. Call {{brand.phoneNumber}} to obtain a refund. Additional
+      refunds are issued at the discretion of the company.</p>
+    <p>2. If not satisfied with the product, call {{brand.phoneNumber}} during the first 30 days for money back guarantee. Please take note that, customers are restricted to receiving a single refund per product ordered. Repetitive refunds are not permitted unless the product, as delivered to you, is defective. We reserve the right to refuse a refund to any customer who repeatedly requests refunds or who, in our judgment, requests refunds in bad faith. </p>
+    <p> 3. Once a refund has been approved please allow for up to 10 days for the refund to be applied. </p>
+    <p> 4. Depending on the bank that issues the credit card, your refund can take up to ten (10) days to appear on your credit card statement. If you have any questions
+      about whether a refund has been issued by us, please call Our Customer Service Department. </p>
+    arrival dates or times.</p>
+
+
+    <br>
+    <br>
+    <h2>Cancellation Policy:</h2>
+    <p>During times when continuity program are offered, you agree to accept the continuity program to the Site, which gives you a 30-day supply of our product, and
+      by accessing the {{brand.name}} Services you authorize the charges set forth below and agree to the following terms and conditions: </p>
+    <ol>
+      <li>Your continuity program will entitle you a 30 day supply of our product, for {{brand.shippingLength}} day ({{brand.shippingLength}}
+        day shipping) program starting on the day you submit your continuity program application to the Site. Shipping may take {{brand.shippingLength}}
+        business days, and we ship via USPS.</li>
+      </br>
+      <li>You agree that if you do not send us notice of cancellation of your continuity program within the {{brand.shippingLength}} day ({{brand.shippingLength}} day shipping) period starting from your initial order, starting from the expiration of your continuity program term, we
+        shall automatically and without further notice: convert your continuity program to a standard RECURRING MONTHLY SUBSCRIPTION to {{brand.name}}  Services,
+        our auto-shipment program, at the standard one month membership rate; renew your monthly membership to the {{brand.name}}  Services for successive
+        periods of one month each at the then current standard one-month membership rate, which on our auto-shipment program will have a new 30-day supply
+        sent to you every month.</li>
+      </br>
+      <li> The official standard one-month membership rates for the {{brand.name}}  Services shall be set forth at the respective join pages of the site. The current
+        standard one-month membership rate is {{current.option.price.regular | currency}} (Free Shipping)</span>.</li>
+      </br>
+      <li>TO CANCEL AUTOMATIC RENEWAL, YOU MUST CALL TO CANCEL BEFORE THE END OF THE MONTHLY PERIOD, YOU MUST NOTIFY {{brand.name}}  PRIOR TO THE
+        END OF THE PAID MONTHLY PERIOD, BY CONTACTING {{brand.name}}  BY TELEPHONE OR BY FILLING OUT OUR <a href='cancellations.html' target='_self'>CANCELLATION FORM</a>.</li>
+      </br>
+      <li>TO CANCEL YOUR MONTHLY MEMBERSHIP YOU MUST NOTIFY {{brand.name}}  OF YOUR CANCELLATION BY TELEPHONE OR BY FILLING OUT OUR <a href='cancellations.html' target='_self'>CANCELLATION FORM</a> OF YOUR THEN CURRENT MEMBERSHIP TERM.</li>
+      </br>
+      <li>All cancellations received by {{brand.name}}  will be effective upon receipt, UNLESS in the {{brand.shippingLength}} day ({{brand.shippingLength}}
+        day shipping) program period. </li>
+      </br>
+      <li>You hereby acknowledge and agree that if you cancel your monthly membership, or if your membership is cancelled by us, your User ID will be removed from
+        the system at the end of the then current monthly membership period and that you will be entitled to receive the full benefits of your monthly membership
+        until the end of such period. You shall not be entitled to any pro-rated or partial refund if you cancel your monthly membership before the end of
+        the then current monthly membership period. You agree that if you cancel at any time after purchasing a monthly membership to the Site, you will
+        still be charged the full months membership fee.</li>
+      </br>
+      <li>You hereby authorize {{brand.name}}  to charge your credit card (which you hereby acknowledge was entered by you into the sign-up page) to pay for your
+        continuity program fee and all monthly membership fees to the Site / our auto-shipment program at the then current standard monthly membership rate
+        of {{current.option.price.regular | currency}} (Free Shipping). You further authorize us to charge your credit card for any and all purchases of products,
+        services and entertainment available through, at, in or on, or provided by, the Site. You agree to be personally liable for all charges incurred
+        by you during or through the use of the {{brand.name}}  Services. </li>
+      </br>
+      <li>Payment for the services provided to you at, and/or through the Site may be made by automatic credit card debit and you hereby authorize {{brand.name}}  and its agents to transact such payments on your behalf.</li>
+      </br>
+      <li>Unless and until you notify us that you wish to cancel or terminated your membership to the Site, you hereby agree and authorize {{brand.name}}  or
+        its designated agent or assignee to automatically renew your membership to the Site on a continuing monthly basis and to charge your credit card
+        (or other approved facility) to pay for the ongoing cost of your membership of {{current.option.price.regular | currency}} (Free Shipping). You hereby further
+        authorize {{brand.name}}  or its designated agent or assignee to charge your credit card (or other approved facility) for any and all purchases
+        of products, services and entertainment provided to you by or though the Site.</li>
+      </br>
+      <li>You further agree that as a Member, you must promptly inform us of any and all the following: loss or theft of the credit card used to pay for membership
+        to the Site or other {{brand.name}}  Services; changes in the expiration date of the credit card; changes in home or billing address; apparent breaches
+        of security regarding your membership, such as loss, theft, unauthorized disclosure or use of a User ID; and all other changes pertaining to your
+        credit card account used to pay for services pursuant to this Agreement which may affect our ability to expeditiously obtain payments due to {{brand.name}} .
+        You agree that you will remain liable for any unauthorized use of the {{brand.name}}  Services, until you have notified us by calling us at {{brand.phoneNumber}}
+        .
+      </li>
+      </br>
+      <li>You hereby agree that any fraudulent reporting of a lost or stolen credit card used to obtain goods or services from the Site or any fraudulent reporting
+        of an unauthorized charge to the Site on your credit card which has been made by you or anyone under your authority, at a time when a charge or other
+        obligation for payment for goods and/or services to the Site remains outstanding at the time of such fraudulent reporting, you shall be liable to
+        {{brand.name}}  for liquidated damages of $25,000.00. The liability for liquidated damages specified in this Paragraph shall not limit any other
+        liability you may have for breach(es) of any other terms, conditions, promises and warranties set forth in this Agreement.</li>
+      </br>
+      <li>You further acknowledge and agree that you will remain liable to {{brand.name}}  for any unauthorized use of the {{brand.name}}  Services associated
+        with your membership.</li>
+    </ol>
+
+
+    <br>
+    <br>
+    <h2>PRODUCT RETURNS</h2>
+    <p>The condition of your reorder must be returned within 30 days from shipping date. Exceptions may apply at the discretion of the Company. You may
+        return reorders by marking the package &quot;Refused: Return to Sender&quot; and RMA numbers are not needed.</p>
+    <p>
+        <br> Returned Products must be sent to the following address:
+        <p>
+            <strong>{{brand.name}}  Returns Department
+                <br> {{brand.returnAddress}}
+                <br>
+            </strong>
+        </p>
+        <br>
+    <h2>Credit Card Descriptor</h2>
+    <p>By ordering Products from Us, You authorize us to charge Your credit card accordingly. Please be aware that the descriptor (or subject line) that appears on Your credit
+      card statement will appear as <b><i>{{brand.product.descriptor}}</i></b>. If You have any questions about the descriptor on Your
+      credit card statement, You should call Our Customer Service Department.</p>
+
+    <br>
+    <br>
+    <h2>TERMS OF SERVICE</h2>
+    <p>This Terms of Service ("TOS") is a legally binding agreement made by and between {{brand.LLC}} ("we" or "us") and you, personally and, if applicable, on behalf of the entity for whom you are using this web site (collectively, "you"). This TOS governs your use of the {{brand.name}}  web site.</p>
+    <p>Corporate Name and Address (Not return address)</p>
+    <p>{{brand.LLC}}<br>
+      {{brand.address}}
+    </p> <br>
+    <br>
+    <h2>1. Using the Web Site.</h2>
+    <p>(a) Eligibility. Except as expressly provided below, Services may only be used by, and Membership is limited to, individuals who can form legally binding contracts under applicable law. Without limitation, minors are prohibited from becoming Members and, except as specifically provided below, using fee-based Services. Membership is defined by engaging in a purchase agreement with {{brand.LLC}} wherein you, the consumer purchase one of the products found on the Web Site.</p>
+    <p>(b) Compliance. You must comply with all of the terms and conditions of this TOS, the policies referred to below, and all applicable laws, regulations and rules when you use the Web Site.</p>
+    <p>(c) License and Restrictions. Subject to the terms and conditions of this TOS, you are hereby granted a limited, non-exclusive right to use the content and materials on the Web Site in the normal course of your use of the Web Site. You may not use any third party intellectual property without the express written permission of the applicable third party, except as permitted by law. The Website will retain ownership of its intellectual property rights and you may not obtain any rights therein by virtue of this TOS or otherwise, except as expressly set forth in this TOS. You will have no right to use, copy, display, perform, create derivative works from, distribute, have distributed, transmit or sublicense from materials or content available on the Web Site, except as expressly set forth in this TOS. You may not attempt to reverse engineer any of the technology used to provide the Services.</p>
+    <p>(d) Prohibited Conduct. In your use of the Web Site and the Services, you may not: (i) infringe any patent, trademark, trade secret, copyright, right of publicity or other right of any party; (ii) defame, abuse, harass, stalk any individual, or disrupt or interfere with the security or use of the Services, the Web Site or any web sites linked to the Web Site; (iii) interfere with or damage the Web Site or Services, including, without limitation, through the use of viruses, cancel bots, Trojan horses, harmful code, flood pings, denial of service attacks, packet or IP spoofing, forged routing or electronic mail address information or similar methods or technology; (iv) attempt to use another user's account, impersonate another person or entity, misrepresent your affiliation with a person or entity, including (without limitation) the Website or create or use a false identity; (v) attempt to obtain unauthorized access to the Web Site or portions of the Web Site that are restricted from general access; (vi) engage, directly or indirectly, in transmission of "spam," chain letters, junk mail or any other type of unsolicited solicitation; (vii) collect, manually or through an automatic process, information about other users without their express consent or other information relating to the Web Site or the Services; (viii) use any meta tags or any other "hidden text" utilizing the {{brand.LLC}} name, trademarks, or product names; (ix) advertise, offer to sell, or sell any goods or services, except as expressly permitted by the Website; (x) engage in any activity that interferes with any third party's ability to use or enjoy the Web Site or Services; or (xi) assist any third party in engaging in any activity prohibited by this TOS.</p>
+    <p>(e) Other Users. If you become aware of any conduct that violates this TOS, We encourage you to contact Customer Service. We reserve the right, but will have no obligation, to respond to such communications.</p>
+    <br>
+    <h2>2. Your Content.</h2>
+    <p>(a) License. By posting, storing, or transmitting any content on or to the Website, you hereby grant us a perpetual, worldwide, non-exclusive, royalty-free, sub-licensable, right and license to use, copy, display, perform, create derivative works from, distribute, have distributed, transmit and sublicense such content in any form, in all media now known or hereinafter created, anywhere in the world. You hereby irrevocably waive any claims based on moral rights or similar theories, if any.</p>
+    <p>(b) Objectionable Content. We do not have the ability to control the nature of the user-generated content offered through the Web Site. You are solely responsible for your interactions with other users of the Web Site and any content that you post. We will not be liable for any damage or harm resulting from any content or your interactions with other users of the Web Site. We reserve the right, but have no obligation, to monitor interactions between you and other users of the Web Site and take any other action to restrict access to or the availability of any material that we or another user of the Web Site may consider to be obscene, lewd, lascivious, filthy, excessively violent, harassing or otherwise objectionable (including, without limitation, because it violates this TOS).</p>
+    <br>
+    <h2>3. Accuracy of Information.</h2>
+    <p>We attempt to ensure that the information on the Web Site is complete and accurate; however, this information may contain typographical errors, pricing errors, and other errors or inaccuracies. We assume no responsibility for such errors and omissions, and reserve the right to: (i) revoke any offer stated on the Web Site; (ii) correct any errors, inaccuracies or omissions .</p>
+    <br>
+    <h2>4. Sales Tax.</h2>
+    <p>If you purchase any products available on the Web Site ("Products"), you will be responsible for paying any applicable sales tax indicated on the Web Site.</p>
+    <br>
+    <h2>5. Fraud.</h2>
+    <p>We reserve the right, but undertake no obligation, to actively report and prosecute actual and suspected credit card fraud. We may, in our discretion, require further authorization from you such as a telephone confirmation of your order and other information. We reserve the right to cancel, delay, refuse to ship, or recall from the shipper any order if fraud is suspected. We capture certain information during the order process, including time, date, IP address, and other information that will be used to locate and identify individuals committing fraud. If any Web Site order is suspected to be fraudulent, we reserve the right, but undertake no obligation, to submit all records, with or without a subpoena, to all law enforcement agencies and to the credit card company for fraud investigation. We reserve the right to cooperate with authorities to prosecute offenders to the fullest extent of the law.</p>
+    <br>
+    <h2>6. Intellectual Property Rights.</h2>
+    <p>(a) Copyright. All materials on the Web Site, including without limitation, the logos, design, text, graphics, other files, and the selection and arrangement thereof are either owned by us or are the property of our suppliers or licensors or other companies. You may not use such materials without permission.</p>
+    <p>(b) Trademarks. {{brand.LLC}} is a trade name we own. The related design marks, and other trademarks on the Web Site are owned by us. Page headers, custom graphics, button icons and scripts are trademarks or trade dress we own. You may not use any of these trademarks, trade dress, or trade names without our express written permission.</p>
+    <br>
+    <h2>7. Third Party Websites.</h2>
+    <p>{{brand.LLC}} may contain links to other websites on the Internet that are owned and operated by third parties. We do not control the information, products or services available on these third party websites. The inclusion of any link does not imply our endorsement of the applicable website or any association with the website's operators. Because we have no control over such websites and resources, you agree that we are not responsible or liable for the availability or the operation of such external websites, for any material located on or available from any such websites or for the protection of your data privacy by third parties. Any dealings with, or participation in promotions offered by, advertisers on the Website, including the payment and delivery of related goods or services, and any other terms, conditions, warranties or representations associated with such dealings or promotions, are solely between you and the applicable advertiser or other third party. You further agree that we shall not be responsible or liable, directly or indirectly, for any loss or damage caused by the use of or reliance on any such material available on or through any such site or any such dealings or promotions.</p>
+    <br>
+    <h2>8. Linking and Framing.</h2>
+    <p>You may not deep link to portions of the Web Site, or frame, inline link, or similarly display any of our property, including, without limitation, the Web Site. You may not use any of our logos or other trademarks as part of a link without express written permission.</p>
+    <br>
+    <h2>9. Comments.</h2>
+    <p>All comments, feedback, suggestions, ideas, and other submissions that you disclose, submit or offer to us in connection with your use of the Web Site will become our exclusive property. Such disclosure, submission or offer of any Comments shall constitute an assignment to us of all worldwide right, title and interest in all patent, copyright, trademark, and all other intellectual property and other rights whatsoever in and to the Comments and a waiver of any claim based on moral rights, unfair competition, breach of implied contract, breach of confidentiality, and any other legal theory. You will, at our cost, execute any documents to affect, record, or perfect such assignment. Thus, we will own exclusively all such right, title and interest and shall not be limited in any way in the use, commercial or otherwise, of any Comments. You should not submit any Comments to us if you do not wish to assign such rights to us. We are and will be under no obligation: (i) to maintain any Comments in confidence; (ii) to pay to you or any third party any compensation for any Comments; or (iii) to respond to any Comments. You are and shall remain solely responsible for the content of any Comments you make.</p>
+    <br>
+    <h2>10. Indemnification.</h2>
+    <p>You agree to defend, indemnify and hold the Web Site, and its subsidiaries, affiliates, and their directors, officers, agents, members, shareholders, co-branders or other partners, employees, and Ad Partners harmless from any liabilities, losses, actions, damages, claims or demands, including reasonable attorneys' fees, costs and expenses, made by any third party directly or indirectly relating to or arising out of (a) content you provide to the Web Site or otherwise transmit or obtain through the Service, (b) your use of the Service, (c) your connection to the Service, (d) your violation of this Agreement, (e) your violation of any rights of another or (f) your failure to perform your obligations hereunder. If you are obligated to provide indemnification pursuant to this provision, we may, in our sole and absolute discretion, control the disposition of any Claim at your sole cost and expense. Without limitation of the foregoing, you may not settle, compromise, or in any other manner dispose of any Claim without our consent.</p>
+    <br>
+    <h2>11. DISCLAIMERS, EXCLUSIONS AND LIMITATIONS.</h2>
+    <p>(a) DISCLAIMER OF WARRANTIES. WE PROVIDE THE WEB SITE, THE PRODUCTS, AND SERVICES ON AN "AS IS" AND "AS AVAILABLE" BASIS. WE DO NOT REPRESENT OR WARRANT THAT THE PRODUCTS, THE WEB SITE, THE SERVICES, ITS USE, ANY INFORMATION ON IT: (I) WILL BE UNINTERRUPTED OR SECURE, (II) WILL BE FREE OF DEFECTS, INACCURACIES OR ERRORS, (III) WILL MEET YOUR REQUIREMENTS, OR (IV) WILL OPERATE IN THE CONFIGURATION OR WITH OTHER HARDWARE OR SOFTWARE YOU USE. WE MAKE NO WARRANTIES OTHER THAN THOSE MADE EXPRESSLY IN THIS TOS, AND HEREBY DISCLAIM ANY AND ALL IMPLIED WARRANTIES, INCLUDING WITHOUT LIMITATION, WARRANTIES OF FITNESS FOR A PARTICULAR PURPOSE, MERCHANTABILITY AND NON-INFRINGEMENT.</p>
+    <p>(b) DISCLAIMER OF FORWARD-LOOKING STATEMENTS. THIS WEB SITE MAY CONTAIN FORWARD-LOOKING STATEMENTS THAT REFLECT OUR CURRENT EXPECTATION REGARDING FUTURE EVENTS AND BUSINESS DEVELOPMENT. THE FORWARD-LOOKING STATEMENTS INVOLVE RISKS AND UNCERTAINTIES. ACTUAL DEVELOPMENTS OR RESULTS COULD DIFFER MATERIALLY FROM THOSE PROJECTED AND DEPEND ON A NUMBER OF FACTORS, SOME OF WHICH ARE OUTSIDE OUR CONTROL.</p>
+    <p>(c) HEALTH RELATED INFORMATION. WE PROVIDE INFORMATION ON THE WEB SITE FOR INFORMATIONAL PURPOSES ONLY. IT IS NOT MEANT AS A SUBSTITUTE FOR THE ADVICE OF A DOCTOR OR OTHER HEALTH CARE PROFESSIONAL. YOU SHOULD NOT USE THE INFORMATION AVAILABLE ON OR THROUGH THE WEB SITE FOR DIAGNOSING OR TREATING A MEDICAL CONDITION. YOU SHOULD CAREFULLY READ ALL PRODUCT INSTRUCTIONS PRIOR TO USE.</p>
+    <p>(d) PRODUCTS. ALL PRODUCTS ARE SUBJECT ONLY TO ANY APPLICABLE WARRANTIES OF THEIR RESPECTIVE MANUFACTURERS, DISTRIBUTORS, AND SUPPLIERS, IF ANY, PROVIDED IN THE PRODUCT PACKAGING. TO THE FULLEST EXTENT PERMISSIBLE BY APPLICABLE LAW, WE HEREBY DISCLAIM ALL WARRANTIES OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING WITHOUT LIMITATION, ANY IMPLIED WARRANTIES OF MERCHANTABILITY, NON-INFRINGEMENT, OR FITNESS FOR A PARTICULAR PURPOSE. WITHOUT LIMITING THE GENERALITY OF THE FOREGOING, WE HEREBY EXPRESSLY DISCLAIM ALL LIABILITY FOR PRODUCT DEFECT OR FAILURE CLAIMS THAT ARE DUE TO NORMAL WEAR, PRODUCT MISUSE, ABUSE, PRODUCT MODIFICATION, IMPROPER PRODUCT SELECTION, NON-COMPLIANCE WITH ANY CODES, OR MISAPPROPRIATION</p>
+    <p>(e) EXCLUSION OF DAMAGES. WE WILL NOT BE LIABLE TO YOU OR ANY THIRD PARTY FOR ANY CONSEQUENTIAL, INCIDENTAL, INDIRECT, PUNITIVE OR SPECIAL DAMAGES (INCLUDING, WITHOUT LIMITATION, DAMAGES RELATING TO LOST PROFITS, LOST DATA OR LOSS OF GOODWILL) ARISING OUT OF, RELATING TO OR CONNECTED WITH THE USE OF THE WEB SITE OR PRODUCTS, REGARDLESS OF THE CAUSE OF ACTION ON WHICH THEY ARE BASED, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGES OCCURRING.</p>
+    <p>(f) LIMITATION OF LIABILITY. IN NO EVENT WILL OUR AGGREGATE LIABILITY ARISING FROM, RELATING TO, OR IN CONNECTION WITH THIS TOS (INCLUDING, WITHOUT LIMITATION, CLAIMS RELATING TO THE WEB SITE, OR THE PRODUCTS) EXCEED THE GREATER OF $100 OR THE AMOUNT THAT YOU PAID FOR THE PRODUCTS.</p>
+    <br>
+    <h2>12. Force Majeure.</h2>
+    <p>You acknowledge and understand that if the Web Site is unable to provide the Products as a result of a force majeure event the Website will not be in breach of any of its obligations towards You under these Terms of Service. A force majeure event means any event beyond the control of the Website. THE WEBSITE SHALL NOT HAVE ANY LIABILITY TO YOU WHETHER IN CONTRACT, WARRANTY, TORT (INCLUDING NEGLIGENCE), OR ANY OTHER FORM OF LIABILITY FOR FAILING TO PERFORM ITS OBLIGATIONS UNDER THIS AGREEMENT TO THE EXTENT THAT SUCH FAILURE IS AS A RESULT OF A FORCE MAJEURE EVENT.</p>
+    <br>
+    <h2>13. Domestic Use</h2>
+    <p>Export Restriction. We control the Web Site from our offices within the United States of America. We make no representation that the Web Site or its content (including, without limitation, any products or services available on or through the Web Site) are appropriate or available for use in other locations. Users who access the Web Site from outside the United States of America do so on their own initiative and must bear all responsibility for compliance with local laws, if applicable. Further, the United States export control laws prohibit the export of certain technical data and software to certain territories. No content from the Web Site may be downloaded in violation of United States law.</p>
+    <br>
+    <h2>14. Arbitration.</h2>
+    <p>All disputes arising out of or relating to this TOS (including its formation, performance or alleged breach) or your use of the Web Site will be exclusively resolved under confidential binding arbitration held in signer before and in accordance with the Rules of the American Arbitration Association. The arbitrator's award will be binding and may be entered as a judgment in any court of competent jurisdiction. To the fullest extent permitted by applicable law, no arbitration under this TOS will be joined to an arbitration involving any other party subject to this TOS, whether through class arbitration proceedings or otherwise. Notwithstanding the foregoing, we will have the right to seek injunctive or other equitable relief in state or federal court located in signer to enforce this TOS or prevent an infringement of a third party's rights. In the event equitable relief is sought, each party hereby irrevocably submits to the personal jurisdiction of such court.</p>
+    <br>
+    <h2>15. Waiver of Class Action Rights</h2>
+      <p>BY ENTERING INTO THIS TOS, YOU HEREBY IRREVOCABLY WAIVE ANY RIGHT YOU MAY HAVE TO JOIN CLAIMS WITH THOSE OF OTHERS IN THE FORM OF A CLASS ACTION OR SIMILAR PROCEDURAL DEVICE. ANY CLAIMS ARISING OUT OF, RELATING TO, OR CONNECTED WITH THIS TOS MUST BE ASSERTED INDIVIDUALLY.</p>
+      <br>
+      <h2>16. Limitation of Actions.</h2>
+      <p>You acknowledge and agree that, regardless of any statute or law to the contrary, any claim or cause of action you may have arising out of, relating to, or connected with your use of the Web Site, must be filed within one calendar year after such claim or cause of action arises, or forever be barred.</p>
+      <br>
+      <h2>17. Modification of Terms of Service.</h2>
+      <p>We reserve the right to change or modify these Terms of Use at any time and your continued use of this site will be conditioned upon the Terms of Use in force at the time of your use. You can always check the most current version of the Terms of Use at this page.</p>
+      <br>
+      <h2>18. Termination.</h2>
+      <p>We will have the right to terminate your access to the Web Site if we reasonably believe you have breached any of the terms and conditions of this TOS. Following termination, you will not be permitted to use the Web Site and we may, in our discretion, cancel any outstanding Product Orders. If your access to the Web Site is terminated, we reserve the right to exercise whatever means we deem necessary to prevent unauthorized access to the Web Site, including, but not limited to, technological barriers, IP mapping, and direct contact with your Internet Service Provider. This TOS will survive indefinitely unless and until we choose to terminate it, regardless of whether any account you open is terminated by you or us or if you have the right to access or use the Web Site.</p>
+      <br>
+      <h2>19. Integration.</h2>
+      <p>This TOS contains the entire understanding between you and us regarding the use of the Web Site, and supersedes all prior and contemporaneous agreements and understandings between you and us relating thereto.</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+
+
+
+  </div>
+
+
+  <!-- footer -->
+  <footer></footer>
+  <script type="text/javascript" src="ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+  <script type="text/javascript" src="ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script type="text/javascript" src="frontend/js/app.js"></script>
+  <div ng-include="frontend/storage/modal.html"> </div>
+
+  <script type="text/javascript" src="js/move-top.js"></script>
+  <script type="text/javascript" src="js/easing.js"></script>
+  <script type="text/javascript">
+    jQuery(document).ready(function($) {
+      $(".scroll").click(function(event) {
+        event.preventDefault();
+        $('html,body').animate({
+          scrollTop: $(this.hash).offset().top
+        }, 1000);
+      });
+    });
+
+  </script>
+  <!-- start-smoth-scrolling -->
+  <!-- here stars scrolling icon -->
+  <script type="text/javascript">
+    $(document).ready(function() {
+      /*
+				var defaults = {
+				containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear'
+				};
+			*/
+
+      $().UItoTop({
+        easingType: 'easeOutQuart'
+      });
+
+    });
+
+  </script>
+  <!-- //here ends scrolling icon -->
+
+
+  <!--js for bootstrap working-->
+  <script src="js/bootstrap.js"></script>
+
+  <script src='src/js/App-config.js'></script>
+  <script src='src/js/DataController.js'></script>
+</body>
+
+</html>

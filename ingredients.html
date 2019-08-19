@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html ng-app="App" ng-controller="DataController" ng-cloak>
+  <head>
+     <meta content="noindex" name="robots" /> <meta content="noindex" name="googlebot" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="frontend/css/app.css" media="all">
+    <title>{{product.name}}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+    <!--// Bootstrap-CSS -->
+    <link href="css/font-awesome.css" rel="stylesheet">
+    <!--// Font-Awesome-CSS -->
+    <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <!-- //Style Sheets -->
+    <!-- web-fonts -->
+    <link rel='stylesheet' href='src/css/fonts.css'>
+    <link href="https://fonts.googleapis.com/css?family=Khula:300,400,600,700,800" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,400,400i,500,500i,600,600i,700,700i,800" rel="stylesheet">
+<style>
+    .img_lst {
+  display: inline-block;
+  vertical-align: top;
+  width: 33%;
+}
+
+  h3 {
+  background: #f4f4f4 none repeat scroll 0 0;
+  font-size: 30px;
+  margin: 0;
+  padding: 10px 0;
+  text-align: center;
+}
+
+  .img_lst > img {
+  height: auto;
+  max-width: 100%;
+}
+   .img_hld {
+  margin: 38px auto 0;
+  padding-bottom: 30px;
+  width: 1180px;
+}
+    </style>
+
+<script>var SITE_BASE_URL = '.';</script>
+</head>
+
+  <body>
+    <!-- banner -->
+    <div class="banner-1" id="home" data-type="background" data-speed="2">
+      <!-- HEADER START -->
+      <div class="nav-bg">
+  <header></header>
+</div>       <!-- //navigation -->
+    </div>
+
+    <!-- CONTENT START -->
+    <div class="page-content">
+
+      <!-- INNER PAGE BANNER -->
+
+      <!-- INNER PAGE BANNER END -->
+
+      <!-- BREADCRUMB ROW -->
+      <div class="bg-gray-light p-tb20">
+        <div class="container">
+          <ul class="wt-breadcrumb breadcrumb-style-2">
+            <li><a href="index"><i class="fa fa-home"></i> Home</a></li>
+            <li>Product Ingredients</li>
+          </ul>
+        </div>
+      </div>
+
+              <div class="img_hld">
+                  <h1>{{brand.name}} </h1>
+
+                  <br>
+          
+                  <h2>Product Information:</h2>
+          
+                  <p>Regular Size: {{brand.product.amount}} {{brand.product.measure}}</p>
+                  <p>Travel Size: {{brand.product.amountTravel}} {{brand.product.measure}}</p>
+                  <br>
+          
+                  <h2>Ingredients:</h2>
+                  <br>
+                  <!-- <div ng-show="{{current.optionIndex === undefined}}"> -->
+                      <p ng-repeat='option in brand.product.options'>
+                          <span style='font-weight: bold; font-size: 18px;'>{{option.type}}</span>
+                          <br>
+                          {{option.ingredients.main}}
+                          <br>
+                          <br>
+                          {{options.ingredients.other ? 'Other: ' + options.ingredients.other : ''}}
+                      </p>
+                  <!-- </div> -->
+          
+                  <!-- <div ng-show="{{current.optionIndex !== undefined}}">
+                      <p>
+                          <span style='font-weight: bold; font-size: 18px;'>{{current.option.name}}</span>
+                          <br>
+                          {{current.option.ingredients.main}}
+                          <br>
+                          <br>
+                          {{current.option.ingredients.other ? 'Other: ' + current.option.ingredients.other : ''}}
+                      </p>
+                  </div> -->
+          
+                  <h2>Suggested Use:</h2>
+          
+                  <p>{{brand.product.suggestedUse}}</p>
+          
+                  <br>
+          
+                </div>
+      </div>
+
+
+         <!-- <p>
+            500 mg Primavie shilajit extract, copper (as copper oxide) 20mg, zinc (as zinc oxide) 400mcg biotin, l-citrulline, caffeine anhydrous.
+          </p>-->
+
+        <!-- FOOTER START -->
+    <!-- footer -->
+<footer></footer>
+    <!-- FOOTER END -->
+  <script type="text/javascript" src="ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+  <script type="text/javascript" src="ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script type="text/javascript" src="frontend/js/app.js"></script>
+		<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
+        </script>
+        <script src='src/js/App-config.js'></script>
+    <script src='src/js/DataController.js'></script>
+	</body>
+</html>

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html ng-app="App" ng-controller="DataController" ng-cloak>
+
+<head>
+  <meta content="noindex" name="robots" />
+  <meta content="noindex" name="googlebot" />
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" href="frontend/css/app.css" media="all">
+  <!-- FAVICONS ICON -->
+  <title>{{brand.name}}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+  <!--// Bootstrap-CSS -->
+  <link href="css/font-awesome.css" rel="stylesheet">
+  <!--// Font-Awesome-CSS -->
+  <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+  <!-- //Style Sheets -->
+  <!-- web-fonts -->
+   <link rel='stylesheet' href='src/css/fonts.css'>
+  <link href="https://fonts.googleapis.com/css?family=Khula:300,400,600,700,800" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,400,400i,500,500i,600,600i,700,700i,800" rel="stylesheet">
+  <style>
+    h4 {
+        line-height: 22px;
+        color: #3f3e3e;
+        margin-top: 15px;
+        margin-bottom: 15px;
+      }
+      input[type=checkbox]+label:before, input[type=radio]+label:before{
+        border-radius: 30px;
+      }
+    </style>
+  <!--// web-fonts -->
+
+  <script>var SITE_BASE_URL = '.';</script>
+</head>
+
+<body>
+  <div class="banner-1" id="home" data-type="background" data-speed="2">
+    <!-- HEADER START -->
+    <div class="nav-bg">
+      <header></header>
+    </div> 
+  </div>
+
+  <div class="page-content">
+    <div class="bg-gray-light p-tb20">
+      <div class="container">
+        <ul class="wt-breadcrumb breadcrumb-style-2">
+          <li><a href="index.html"><i class="fa fa-home"></i> Home </a></li>
+          <li> &nbsp;Product Details </li>
+          <li> {{current.option.type}}</li>
+        </ul>
+      </div>
+    </div>
+    <!-- SECTION CONTENT START -->
+    <div class="section-full p-t80 p-b50">
+
+      <!-- PRODUCT DETAILS -->
+      <div class="container woo-entry">
+
+        <div class="container">
+          <div class="card">
+            <div class="container-fliud">
+              <div class="wrapper row">
+                <div class="preview col-md-4">
+                  <div class="preview-pic tab-content">
+                    <div class="tab-pane active" id="pic-1" style="text-align: center;">
+                      <img ng-src='{{current.option.image}}' id='img_attr' style="max-height: 360px;vertical-align:middle;/* text-align: center; */ border:0px;"  /></div>
+                  </div>
+                </div>
+
+
+                <div class="details col-md-7 pull-right">
+                  <h3 class="product-title">{{brand.name}} {{(current.option.type === 'Cleanse' ? '' : current.option.type)}}</h3>
+                  <p class="product-description"><br>
+                    {{current.option.description}}
+                  </p>
+                  <br><br>
+                  <b>Ingredients</b>
+                  <p>
+                    {{current.option.ingredients.main}}
+                    <br>
+                    {{current.options.ingredients.other ? 'Other: ' + current.options.ingredients.other : ''}}
+                  </p>
+         
+                  <form ng-submit='checkout()'>
+                    <span>
+                      <p>
+                        <input required type="radio" value="travelPack" id="opt3" class="type_prod" name="offer-type"> <label for="opt3">{{current.option.price.travelPack.regular | currency}} + $0.00 - Travel Size (One Week Supply)</label>
+                        
+                        <input required type="radio" value="straightSale" id="opt2" class="type_prod" name="offer-type"> <label for="opt2">{{current.option.price.straightSale.regular | currency}} + $0.00 - Regular Size (One Month Supply)</label>
+                        
+                        <input required type="radio" value="continuity" id="opt4" class="type_prod" name="offer-type"> <label for="opt4">{{current.option.price.continuity.regular | currency}} + {{current.option.price.continuity.shipping | currency}} - Regular Size (One Month Supply with Continuity Program)</label>
+                      </p>
+                    </span>
+                    <!-- <h5 style="font-weight: bold;" ng-if="false">
+                      <span style="color: #069e04;">40% off</span> discount
+                    </h5> -->
+                    <!-- <h4 class="price" ng-if="false">Current Price:
+                      <span ng-if="false">$54.99</span>
+                    </h4> -->
+  
+                    <div class="more" style='margin-top: 30px;'>
+                        <input type="hidden" id="type_item" value="{{current.option.type}}">
+                      <!-- <a ng-href="checkout.html?option={{current.optionIndex}}&type={{current.type}}" class="site-button  m-r15 nav_string" type="">Checkout</a> -->
+                      <button type='submit' class='btn btn-success' style='height: 50px; width: 100px;'>Checkout</button>
+                    </div>
+                  </form>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <!-- PRODUCT DETAILS -->
+
+    </div>
+    <!-- CONTENT CONTENT END -->
+
+
+  </div>
+  <!-- CONTENT END -->
+
+ <footer></footer>
+
+  <!-- BUTTON TOP START -->
+  <input type="hidden" id="upcart">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.7/angular.min.js"></script>   
+  <script type="text/javascript" src="ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="src/js/App-config.js"></script>
+  <script src="src/js/DataController.js"></script>
+  <script type="text/javascript">
+    jQuery(document).ready(function($) {
+      $(".scroll").click(function(event) {
+        event.preventDefault();
+        $('html,body').animate({
+          scrollTop: $(this.hash).offset().top
+        }, 1000);
+      });
+    });
+
+  </script>
+
+  <!--js for bootstrap working-->
+  <script src="js/bootstrap.js"></script>
+    <script type="text/javascript">
+    $(document).on('change', '.type_prod', function(){
+      const valitem = $('#type_item').val();
+
+      if($(this).val() == 'continuity' && valitem == 'Keto' || $(this).val() == 'straightSale' && valitem == 'Keto'){
+        $('#img_attr').attr('src', 'images/bottle2.png');
+         $('#img_attr').attr('style', 'max-height: 360px;' );
+      }else if($(this).val() == 'travelPack' && valitem == 'Keto'){
+        $('#img_attr').attr('src', 'images/box2.png');
+        $('#img_attr').attr('style', 'max-height: 360px; padding: 0px 20px;');
+      }else if($(this).val() == 'travelPack' && valitem == 'Garcinia'){
+        $('#img_attr').attr('src', 'images/box3.png');
+        $('#img_attr').attr('style', 'max-height: 360px; padding: 0px 20px;');
+      }else if($(this).val() == 'continuity' && valitem == 'Garcinia' || $(this).val() == 'straightSale' && valitem == 'Garcinia'){
+        $('#img_attr').attr('src', 'images/bottle3.png');
+        $('#img_attr').attr('style', 'max-height: 360px;' );
+      }
+    });
+  </script>
+
+</body>
+
+</html>

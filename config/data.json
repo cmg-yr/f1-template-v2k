@@ -1,0 +1,73 @@
+{
+  "name": "Refresh Diet Regimens",
+  "campaignId": "211",
+  "LLC": "Kramatic Rising Ventures LLC",
+  "phoneNumber": "1-855-719-3602",
+  "email": "support@refreshdietregimens.com",
+  "cancellationEmail": "support@refreshdietregimens.com",
+  "address": "989 S Main Street Suite A #436, Cottonwood, AZ 86326, United States",
+  "returnAddress": "1175 Baker St. #E19-204, Costa Mesa, CA 92626, United States",
+  "shippingLength": 0,
+  "url": "refreshdietregimens.com",
+
+  "product": {
+    "descriptor": "Refresh Diet Regimens",
+    "container": "Bottle",
+    "amount": 60,
+    "measure": "Capsules",
+    "amountTravel": 6,
+    "claim": "\nMay help in weight management.",
+    "description": "Refresh Diet Regimens is a suite of dietary supplements that may help you achieve and maintain your weight loss goals while looking young and healthy. Our supplements provide the most effective weight management solutions without any change with your lifestyle routines.",
+    "suggestedUse": "As a dietary supplement, take two(2) capsules a day with an 8oz glass of water.",
+    "image": "background.png",
+    "bottleImage": "order1pck.jpg",
+
+    "options": [{
+        "type": "Keto",
+        "ingredients": "keto",
+        "quantity": 1,
+        "productId": "85",
+        "shippingId": "7",
+        "image": "images/bottle2.png",
+        "description": "Refresh Diet Regimens Keto is our dietary supplement that may help you get fit and sexy in no time. Our solution may help you achieve and maintain your desired body weight so you may look good on that next big event. Why not give us a try today, you will surely feel the difference.",
+        "price": {
+          "straightSale": {
+            "regular": 89.65,
+            "shipping": 0.00
+          },
+          "travelPack": {
+            "regular": 4.95,
+            "shipping": 0.00
+          },
+          "continuity": {
+            "regular": 89.65,
+            "shipping": 4.95
+          }
+        }
+      },
+      {
+        "type": "Garcinia",
+        "ingredients": "garcinia",
+        "quantity": 1,
+        "productId": "89",
+        "shippingId": "7",
+        "image": "images/bottle3.png",
+        "description": "Refresh Diet Regimens Garcinia is our dietary supplement that may help you control your appetite. Our solution may help you suppress your hunger keeping you away from unnecessary calorie intake. Why not give us a try today, our products will surely make a difference.",
+        "price": {
+          "straightSale": {
+            "regular": 89.65,
+            "shipping": 0.00
+          },
+          "travelPack": {
+            "regular": 6.59,
+            "shipping": 0.00
+          },
+          "continuity": {
+            "regular": 89.65,
+            "shipping": 0.00
+          }
+        }
+      }
+    ]
+  }
+}
